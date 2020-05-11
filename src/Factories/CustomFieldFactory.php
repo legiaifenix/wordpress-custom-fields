@@ -14,14 +14,16 @@ class CustomFieldFactory implements Factory
      */
     protected $name;
 
-    public function filePath(string $filePath)
+    public function setFilePath(string $filePath)
     {
-        // TODO: Implement filePath() method.
+        $this->filePath = $filePath;
+        return $this;
     }
 
     public function setName(string $name)
     {
-        // TODO: Implement setName() method.
+        $this->name = $name;
+        return $this;
     }
 
     public function create()
