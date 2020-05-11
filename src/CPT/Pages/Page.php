@@ -10,7 +10,7 @@ abstract class Page
     protected $callback;
     protected $template;
 
-    public function __construct(string $name, string $icon, string $position, string $template, callable $callback)
+    public function __construct(string $name, string $icon, string $position, string $template, callable $callback = null)
     {
         $this->name = $name;
         $this->icon = $icon;
