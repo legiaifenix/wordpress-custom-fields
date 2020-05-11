@@ -39,6 +39,6 @@ class PostFactory implements Factory
 
     public function create()
     {
-
+        print_r("Not yet developed");
     }
 }

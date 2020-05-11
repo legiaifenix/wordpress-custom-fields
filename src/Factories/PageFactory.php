@@ -2,6 +2,8 @@
 namespace legiaifenix\wpcftoop\Factories;
 
 
+use legiaifenix\wpcftoop\CPT\Pages\AdminPage;
+
 class PageFactory implements Factory
 {
     /**
@@ -17,7 +19,12 @@ class PageFactory implements Factory
     /**
      * @var array $options                  To help declare the requirements for the custom page, such as template and position
      */
-    protected $options;
+    protected $options = [
+        'icon'      => '',
+        'position'  => 999,
+        'template'  => 'admin.php',
+        'callback'  => null
+    ];
 
     public function setOptions(array $options)
     {
@@ -39,7 +46,14 @@ class PageFactory implements Factory
 
     public function create()
     {
-        // TODO: Implement create() method.
+        $page = new AdminPage(
+            $this->name,
+            $this->options['icon'],
+            $this->options['position'],
+            $this->options['template']
+        );
+
+        return $page;
     }
 
 }
