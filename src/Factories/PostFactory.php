@@ -2,7 +2,7 @@
 namespace legiaifenix\wpcftoop\Factories;
 
 
-class CustomFieldFactory implements Factory
+class PostFactory implements Factory
 {
     /**
      * @var string $filePath                As the path to a JSON file that would loop generate out CFT
@@ -13,6 +13,17 @@ class CustomFieldFactory implements Factory
      * @var string $name                    As the name of the CFT we want to generate, if we only desire one
      */
     protected $name;
+
+    /**
+     * @var array $options
+     */
+    protected $options;
+
+    public function setOptions(array $options)
+    {
+        $this->options = $options;
+        return $this;
+    }
 
     public function setFilePath(string $filePath)
     {

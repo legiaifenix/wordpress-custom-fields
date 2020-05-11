@@ -1,4 +1,4 @@
-Wordpress OOP Custom Field Types
+Wordpress OOP Custom Post Types
 ====================================
 
 [WP Dashicons](https://developer.wordpress.org/resource/dashicons/#admin-media)
@@ -30,6 +30,10 @@ $options = [
     'template'  => '/path/to/your/custom/template/file.php'
 ];
 ```
+
+Then call the factory you wish to use. There are two:
+* PageFactory
+* PostFactory
 
 ```php
 $factory = new PageFactory();
