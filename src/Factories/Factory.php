@@ -8,5 +8,7 @@ interface Factory
 
     public function setName(string $name);
 
+    public function setOptions(array $options);
+
     public function create();
 }

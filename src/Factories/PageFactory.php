@@ -14,6 +14,17 @@ class PageFactory implements Factory
      */
     protected $name;
 
+    /**
+     * @var array $options                  To help declare the requirements for the custom page, such as template and position
+     */
+    protected $options;
+
+    public function setOptions(array $options)
+    {
+        $this->options = $options;
+        return $this;
+    }
+
     public function setFilePath(string $filePath)
     {
         $this->filePath = $filePath;
