@@ -1,0 +1,19 @@
+{
+    "name": "legiaifenix/wordpress-custom-fields",
+    "description": "A package to help generate custom fields within wordpress as OOP as possible (in my abilities)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diogo Santo",
+            "email": "legiaifenix@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "legiaifenix\\wpcftoop\\": "src\\"
+        }
+    }
+}
